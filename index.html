@@ -1,0 +1,59 @@
+<!-- saved from url=(0049)file:///C:/Users/17621/Downloads/index%20(2).html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>&nbsp; &nbsp; <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &nbsp; &nbsp; <title>Document</title>
+    
+    
+    &nbsp; &nbsp; 
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/17621/Downloads/ahh.css">
+    
+    
+    
+    
+    
+    &nbsp; &nbsp; <h1>Welcome to my website</h1>
+    &nbsp; &nbsp; <p>Please fill in your name</p>
+    
+    &nbsp; &nbsp; <div style="text-align: center"><button>Try it</button></div>
+    
+    &nbsp; &nbsp; <style>
+    
+    </style>
+    <script>
+            </script>
+    
+    
+    <script src="file:///C:/Users/17621/Downloads/ahhh.js"></script>
+    </body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Calculator</title>>
+<body>
+    <p>Integer 1：<input type="text" id="num1"></p>
+    <p>Integer 2：<input type="text" id="num2"></p>
+    <p>
+        <input type="button" value="Add" onclick="calc(add)">
+        
+    </p>
+    <p>result：<input type="text" id="result" readonly></p>
+     
+</body>
+</html>
+<script>
+        function calc(func){
+            var result = document.getElementById('result');
+            var num1 = parseInt(document.getElementById('num1').value);
+            var num2 = parseInt(document.getElementById('num2').value);
+            if(isNaN(num1) || isNaN(num2)){
+                alert('Please enter a number');
+                return false;
+            }
+            result.value = func(num1,num2);
+        }
+        function add(num1,num2){
+            return num1+num2;
+        }
+    </script>
